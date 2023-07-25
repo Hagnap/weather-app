@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/weatherAPI.js":
-/*!***************************!*\
-  !*** ./src/weatherAPI.js ***!
-  \***************************/
+/***/ "./src/getDateData.js":
+/*!****************************!*\
+  !*** ./src/getDateData.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createGeoDataURL: () => (/* binding */ createGeoDataURL),\n/* harmony export */   createWeatherDataURL: () => (/* binding */ createWeatherDataURL),\n/* harmony export */   getGetGeoData: () => (/* binding */ getGetGeoData),\n/* harmony export */   getWeatherData: () => (/* binding */ getWeatherData)\n/* harmony export */ });\n// Functions that help interact with the WeatherAPI\n\n// Geo Data\nfunction createGeoDataURL(city) {\n    return \"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={API key}\"\n                .replace(\"{city}\", city)\n                .replace(\"{API key}\", \"671d001b659b475436a1bb76f1452e11\");\n\n}\n\nasync function getGetGeoData(url) {\n    const response = await fetch(url);\n    const geoData = await response.json();\n    return  geoData;\n}\n\n// Weather Data\nfunction createWeatherDataURL(geoData) {\n    return \"https://api.openweathermap.org/data/3.0/onecall?units=imperial&lat={lat}&lon={lon}&appid={API key}\"\n                                                .replace(\"{lat}\", geoData.lat)\n                                                .replace(\"{lon}\", geoData.lon)\n                                                .replace(\"{API key}\", \"671d001b659b475436a1bb76f1452e11\");\n}\n\nasync function getWeatherData(url) {\n    const response = await fetch(url);\n    const weatherData = await response.json();\n    return weatherData;\n}\n\n\n\n//# sourceURL=webpack://weather-app/./src/weatherAPI.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getDate: () => (/* binding */ getDate),\n/* harmony export */   getTime: () => (/* binding */ getTime)\n/* harmony export */ });\n// Gets user's location and time/date data\nlet today = new Date();\n\nfunction getDate() {\n    let date = (today.getMonth()+1) + '-' +\n                    (today.getDate()) + '-' +\n                    (today.getFullYear()) + \"\\n\";\n    \n    return date;\n}\n\nfunction getTime() {\n\n    let mins = String(today.getMinutes());\n    if(mins < 10) {\n        mins = mins.padStart(2, '0')\n    }\n\n    return today.getHours() > 12 ? \n        (today.getHours()-12) + ':' + mins + \" PM\":\n        today.getHours() + ':' + mins + \" AM\";\n}\n\n\n\n//# sourceURL=webpack://weather-app/./src/getDateData.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/weatherAPI.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/getDateData.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
