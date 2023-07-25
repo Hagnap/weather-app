@@ -1,3 +1,5 @@
+const githubLink = "https://github.com/jhagg26/weather-app";
+
 const timeDiv = document.querySelector("time");
 const datePar = document.createElement("p");
 const timePar = document.createElement("p");
@@ -12,6 +14,7 @@ const mainData = document.querySelector("#main-data");
 const hourlyData = document.querySelector("#hourly-data");
 const weeklyData = document.querySelector("#weekly-data");
 const miscData = document.querySelector("#misc-data");
+const footer = document.querySelector("footer");
 
 function convertWeatherTypeToSVG(weatherType) {
 
@@ -186,9 +189,7 @@ function addHourlyData(data) {
         let weatherSVG = document.createElement("img");
         weatherSVG.setAttribute("class", "weather-svg");
         let temperature = document.createElement("p");
-
-        //console.log(data.hourly[i]);
-        //console.log(data.hourly[i].weather[0].main);
+        
         time.textContent = convertTimestamptoTime(data.hourly[i].dt);
         weatherSVG.src = `../images/${convertWeatherTypeToSVG(data.hourly[i].weather[0].main)}`;
         temperature.textContent = `${data.hourly[i].temp}° F`;
@@ -282,6 +283,21 @@ function addDewPointData(data) {
     miscData.appendChild(dewPoint);
 }
 
+function addFooterContent() {
+    let text = document.createElement("p");
+    text.textContent = "Copyright © 2023 jhagg26 ";
+
+    const button = document.createElement("button");
+    button.innerHTML = "<img src='../images/github-logo.svg'>";
+
+    button.addEventListener("click", () => {
+        window.open(githubLink, '_blank');
+    });
+
+    footer.appendChild(text);
+    footer.appendChild(button);
+}
+
 export {
     addDate,
     addTime,
@@ -298,4 +314,5 @@ export {
     addUVIData,
     addFeelsLikeData,
     addDewPointData,
+    addFooterContent
 }

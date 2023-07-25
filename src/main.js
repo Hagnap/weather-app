@@ -28,3 +28,4 @@ dom.addFeelsLikeData(weatherData);
 dom.addWindData(weatherData);
 dom.addUVIData(weatherData);
 dom.addDewPointData(weatherData);
+dom.addFooterContent();
