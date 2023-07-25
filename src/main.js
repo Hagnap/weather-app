@@ -11,10 +11,6 @@ let geoData = (await weatherAPI.getGetGeoData(geoDataURL))[0];
 let weatherDataURL = weatherAPI.createWeatherDataURL(geoData);
 let weatherData = await weatherAPI.getWeatherData(weatherDataURL)
 
-console.log(weatherData);
-console.log(dateData.getDate());
-console.log(dateData.getTime());
-
 // Manipulate DOM
 dom.addDate(dateData.getDate());
 dom.addTime(dateData.getTime());
@@ -24,3 +20,4 @@ dom.addCity(geoData);
 dom.addTemperature(weatherData);
 dom.addTemperatureHighAndLow(weatherData);
 dom.addWeatherDescription(weatherData);
+dom.addHourlyData(weatherData);

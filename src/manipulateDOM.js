@@ -174,6 +174,33 @@ function addWeatherDescription(data) {
     mainData.appendChild(weatherDescription);
 }
 
+function addHourlyData(data) {
+
+    let time;
+
+
+    for(let i = 0; i < 24; i++) {
+        let hourDiv = document.createElement("div");
+        hourDiv.setAttribute("class", "hour-div");
+        let time = document.createElement("p");
+        let weatherSVG = document.createElement("img");
+        weatherSVG.setAttribute("class", "weather-svg");
+        let temperature = document.createElement("p");
+
+        //console.log(data.hourly[i]);
+        //console.log(data.hourly[i].weather[0].main);
+        time.textContent = convertTimestamptoTime(data.hourly[i].dt);
+        weatherSVG.src = `../images/${convertWeatherTypeToSVG(data.hourly[i].weather[0].main)}`;
+        temperature.textContent = `${data.hourly[i].temp}° F`;
+
+        hourDiv.appendChild(time);
+        hourDiv.appendChild(weatherSVG);
+        hourDiv.appendChild(temperature);
+
+        hourlyData.appendChild(hourDiv);
+    }
+}
+
 export {
     addDate,
     addTime,
@@ -182,4 +209,5 @@ export {
     addTemperature,
     addTemperatureHighAndLow,
     addWeatherDescription,
+    addHourlyData,
 }
