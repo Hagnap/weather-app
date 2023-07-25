@@ -189,7 +189,7 @@ function addHourlyData(data) {
         let weatherSVG = document.createElement("img");
         weatherSVG.setAttribute("class", "weather-svg");
         let temperature = document.createElement("p");
-        
+
         time.textContent = convertTimestamptoTime(data.hourly[i].dt);
         weatherSVG.src = `../images/${convertWeatherTypeToSVG(data.hourly[i].weather[0].main)}`;
         temperature.textContent = `${data.hourly[i].temp}° F`;
@@ -236,50 +236,45 @@ function addWeeklyData(data) {
 function addHumidityData(data) {
     const humidity = document.createElement("div");
     humidity.setAttribute("id", "humidity-data");
-    humidity.innerHTML = `Humidity</br>${data.current.humidity}`;
+    humidity.innerHTML = `<p><i>Humidity</i></br>${data.current.humidity}</p>`;
     miscData.appendChild(humidity);
 }
 
 function addWindData(data){
     const wind = document.createElement("div");
     wind.setAttribute("id", "wind-data");
-    wind.innerHTML = `Wind Speed</br>${data.current.wind_speed} MPH`
+    wind.innerHTML = `<p><i>Wind Speed</i></br>${data.current.wind_speed} MPH`
                         + `</br></br>`
-                        + `Wind Direction</br>${getWindDirection(data.current.wind_deg)} (${data.current.wind_deg}°)`;
+                        + `<i>Wind Direction</i></br>${getWindDirection(data.current.wind_deg)} (${data.current.wind_deg}°)</p>`;
     miscData.appendChild(wind);
 }
 
 function addSunData(data) {
     const sun = document.createElement("div");
     sun.setAttribute("id", "sun-data");
-    const sunrise = document.createElement("p");
-    sunrise.innerHTML = `Sunrise</br>${convertTimestamptoTime(data.current.sunrise)}`;
-    const sunset = document.createElement("p");
-    sunset.innerHTML = `Sunrise</br>${convertTimestamptoTime(data.current.sunset)}`;
-    
-    sun.appendChild(sunrise);
-    sun.appendChild(sunset);
-    
+    sun.innerHTML = `<p><i>Sunrise</i></br>${convertTimestamptoTime(data.current.sunrise)}`
+                                + `</br></br>`
+                                + `<i>Sunrise</i></br>${convertTimestamptoTime(data.current.sunset)}</p>`;
     miscData.appendChild(sun);
 }
 function addUVIData(data){
     const uvi = document.createElement("div");
     uvi.setAttribute("id", "uvi-data");
-    uvi.innerHTML = `UVI</br>${data.current.uvi}`;
+    uvi.innerHTML = `<i>UVI</i></br>${data.current.uvi}`;
     miscData.appendChild(uvi);
 }
 
 function addFeelsLikeData(data) {
     const feelsLike = document.createElement("div");
     feelsLike.setAttribute("id", "feels-like-data");
-    feelsLike.innerHTML = `Feels Like</br>${data.current.feels_like}° F`;
+    feelsLike.innerHTML = `<p><i>Feels Like</i></br>${data.current.feels_like}° F</p>`;
     miscData.appendChild(feelsLike);
 }
 
 function addDewPointData(data) {
     const dewPoint = document.createElement("div");
     dewPoint.setAttribute("id", "dew-point-data");
-    dewPoint.innerHTML = `Dew Point</br>${data.current.dew_point}`;
+    dewPoint.innerHTML = `<p><i>Dew Point</i></br>${data.current.dew_point}</p>`;
     miscData.appendChild(dewPoint);
 }
 
