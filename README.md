@@ -21,21 +21,19 @@ The website uses the Session-Storage in the browser. When you load up it will qu
 
 ## Link
 
-Sadly for this project there is no link, it has to be run locally. Sorry about that, to compensate I will have images of the webpage below! This is because with the free tier of the WeatherAPI you can NOT make HTTPS request to the WeatherAPI on a live website, it forces free tier users to use HTTP. It works locally but when hosted on GitHub Pages it runs to errors due to this issue. Now I considered paying the subscription but the cheapest option that allowed HTTPS request was $470 a month... I cannot afford that and if I could I wouldn't want to spend that money for a silly little project. 
+Sadly for this project the webpage runs into errors when hosted on GitHub pages (you can see the errors [here](https://jhagg26.github.io/weather-app/) if you use the devtools To view this webpage the project has to be run locally. So you download it and view the `index.html` file via your browser. Sorry about that, to compensate I will have images of the webpage below! This is because with the free tier of the WeatherAPI you can NOT make HTTPS request to the WeatherAPI on a live website, it forces free tier users to use HTTP. It works locally but when hosted on GitHub Pages it runs to errors due to this issue. Now I considered paying the subscription but the cheapest option that allowed HTTPS request was $470 a month... I cannot afford that and if I could I wouldn't want to spend that money for a silly little project. 
 
 * Here is an example of Charlotte
 
+            - ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/160b58cf-aa34-481e-9b6d-2934fed1fe2b)
 
-            x
-
-            x
+            - ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/ce5e2f0c-b078-4202-a104-6bc89066fb2e)
 
 * Here is an example of Boston
+  
+              - ![BST-1](https://github.com/jhagg26/weather-app/assets/60297426/fcb492ef-af81-475a-b9ae-3813beebc6f5)
 
-
-            x
-
-            x
+              - ![BST-2](https://github.com/jhagg26/weather-app/assets/60297426/c68f3d6f-2e8c-4b68-866b-a6b6e75a536f) 
 
 ## Challenges Faced
 
