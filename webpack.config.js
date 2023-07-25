@@ -6,8 +6,7 @@ module.exports = {
   entry: {
     main: './src/main.js',
     weatherAPI: './src/weatherAPI.js',
-    //weatherObj: './src/weatherObj.js',
-    //manipulateDOM: './src/manipulateDOM.js',
+    manipulateDOM: './src/manipulateDOM.js',
     dateData: './src/getDateData.js'
   },
   output: {
