@@ -25,15 +25,17 @@ Sadly for this project the webpage runs into errors when hosted on GitHub pages 
 
 * Here is an example of Charlotte
 
-            - ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/160b58cf-aa34-481e-9b6d-2934fed1fe2b)
+  ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/160b58cf-aa34-481e-9b6d-2934fed1fe2b)
 
-            - ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/ce5e2f0c-b078-4202-a104-6bc89066fb2e)
+
+  ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/ce5e2f0c-b078-4202-a104-6bc89066fb2e)
 
 * Here is an example of Boston
   
-              - ![BST-1](https://github.com/jhagg26/weather-app/assets/60297426/fcb492ef-af81-475a-b9ae-3813beebc6f5)
+  ![BST-1](https://github.com/jhagg26/weather-app/assets/60297426/fcb492ef-af81-475a-b9ae-3813beebc6f5)
 
-              - ![BST-2](https://github.com/jhagg26/weather-app/assets/60297426/c68f3d6f-2e8c-4b68-866b-a6b6e75a536f) 
+
+  ![BST-2](https://github.com/jhagg26/weather-app/assets/60297426/c68f3d6f-2e8c-4b68-866b-a6b6e75a536f) 
 
 ## Challenges Faced
 
