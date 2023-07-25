@@ -264,7 +264,7 @@ function addSunData(data) {
 function addUVIData(data){
     const uvi = document.createElement("div");
     uvi.setAttribute("id", "uvi-data");
-    uvi.innerHTML = `<i>UVI</i></br>${data.current.uvi}`;
+    uvi.innerHTML = `<p><i>UVI</i></br>${data.current.uvi}</p>`;
     miscData.appendChild(uvi);
 }
 
