@@ -1,5 +1,6 @@
 * {
     --header-footer-color: #EFEFEF;
+    --transparent-header-footer-color: #efefefa1;
     --main-background-color: #DAF0EE;
     --secondary-background-color: #DAF0EE;
 }
@@ -20,6 +21,19 @@ img {
 
 header {
     background-color: var(--header-footer-color);
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+header form input {
+    padding: 0px 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 25px;
+    width: 256px;
+    padding-right: 8px;
+    background-color: var(--transparent-main-background-color);
 }
 
 time {

@@ -10,6 +10,41 @@ const nav = document.querySelector("nav");
 const searchBar = document.createElement("form");
 nav.appendChild(searchBar);
 
+/*
+
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    task.name = document.getElementById("task-name").value;
+    task.description = document.getElementById("task-description").value;
+    task.dueDate = document.getElementById("task-duedate").value;
+    task.priority = document.getElementById("task-priority").value;
+
+    if (project) {
+      window.localStorage.setItem(
+        "allProjects",
+        JSON.stringify(Project.projectCollection)
+      );
+
+      displayCurrentProject(project);
+    } else {
+      window.localStorage.setItem(
+        "allTasks",
+        JSON.stringify(Task.taskCollection)
+      );
+
+      displayAllTasks();
+    }
+  });
+*/
+
+searchBar.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(document.querySelector("input").value);
+    window.sessionStorage.setItem("city-query", JSON.stringify(document.querySelector("input").value));
+    location.reload();
+});
+
 const mainData = document.querySelector("#main-data");
 const hourlyData = document.querySelector("#hourly-data");
 const weeklyData = document.querySelector("#weekly-data");
@@ -138,7 +173,7 @@ function addTime(time) {
 function addSearchBar() {
     const searchBarInput = document.createElement("input");
     searchBarInput.type = "text";
-    searchBarInput.placeholder = "Name of a City";
+    searchBarInput.placeholder = "Charlotte";
 
     searchBar.appendChild(searchBarInput);
 }
