@@ -21,11 +21,43 @@ header {
     background-color: var(--header-footer-color);
 }
 
+time {
+    padding: 2px 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
 #hourly-data,
 #weekly-data,
 #misc-data {
     border: 2px solid black;
     border-radius: 5px;
+}
+
+#main-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-data div {
+    height: fit-content;
+}
+
+#city-name {
+    margin-bottom: 0px;
+}
+
+#temperature-low-high,
+#weather-description {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#city-name,
+#temperature {
+    font-size: 40px;
 }
 
 #hourly-data {
@@ -125,7 +157,7 @@ footer {
     padding: 0;
     margin: 0px;
 
-    height: 35px;
+    height: 40px;
     
     display: flex;
     justify-content: center;
