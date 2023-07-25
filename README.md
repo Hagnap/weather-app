@@ -21,7 +21,9 @@ The website uses the Session-Storage in the browser. When you load up it will qu
 
 ## Link
 
-Sadly for this project the webpage runs into errors when hosted on GitHub pages (you can see the errors [here](https://jhagg26.github.io/weather-app/) if you use the devtools To view this webpage the project has to be run locally. So you download it and view the `index.html` file via your browser. Sorry about that, to compensate I will have images of the webpage below! This is because with the free tier of the WeatherAPI you can NOT make HTTPS request to the WeatherAPI on a live website, it forces free tier users to use HTTP. It works locally but when hosted on GitHub Pages it runs to errors due to this issue. Now I considered paying the subscription but the cheapest option that allowed HTTPS request was $470 a month... I cannot afford that and if I could I wouldn't want to spend that money for a silly little project. 
+Sadly for this project the webpage runs into errors when hosted on GitHub pages (you can see the errors [here](https://jhagg26.github.io/weather-app/) if you use the devtools To view this webpage the project has to be run locally. So you download it and view the `index.html` file via your browser. Sorry about that, to compensate I will have images of the webpage below! 
+
+There are errors because with the free tier of the WeatherAPI you can NOT make HTTPS request to the WeatherAPI on a live website, it forces free tier users to use HTTP. It works locally but when hosted on GitHub Pages it runs to errors due to this issue. Now I considered paying the subscription but the cheapest option that allowed HTTPS request was $470 a month... I cannot afford that and if I could I wouldn't want to spend that money for a silly little project. 
 
 * Here is an example of Charlotte
 
