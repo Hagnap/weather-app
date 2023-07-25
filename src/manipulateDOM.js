@@ -146,18 +146,21 @@ function addSearchBar() {
 function addCity(geoData) {
     console.log(geoData);
     const cityName = document.createElement("p");
+    cityName.setAttribute("id", "city-name");
     cityName.textContent = geoData.name;
     mainData.append(cityName);
 }
 
 function addTemperature(data) {
     const temperature = document.createElement("p");
+    temperature.setAttribute("id", "temperature");
     temperature.textContent = data.current.temp + "° F";
     mainData.appendChild(temperature);
 }
 
 function addTemperatureHighAndLow(data) {
     const tempHighAndLow = document.createElement("p");
+    tempHighAndLow.setAttribute("id", "temperature-low-high");
     tempHighAndLow.textContent = (data.daily[0].temp.min + "° F") + 
                                   ' / ' +
                                   (data.daily[0].temp.max + "° F");
@@ -167,6 +170,7 @@ function addTemperatureHighAndLow(data) {
 
 function addWeatherDescription(data) {
     const weatherDescription = document.createElement("p");
+    weatherDescription.setAttribute("id", "weather-description");
     // Reference: https://stackoverflow.com/questions/4878756/how-to-capitalize-first-letter-of-each-word-like-a-2-word-city
     // A great solution, separate at the space, for each substring we get from the split we make the first letter capitalized, and then join all the substrings 
     // Gotta love ES6 :)
