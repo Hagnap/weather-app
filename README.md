@@ -25,10 +25,10 @@ Sadly for this project the webpage runs into errors when hosted on GitHub pages 
 
 * Here is an example of Charlotte
 
-  ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/160b58cf-aa34-481e-9b6d-2934fed1fe2b)
+    ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/779d2caa-891c-4ef0-9e1b-5cf8a9163a65)
 
 
-  ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/ce5e2f0c-b078-4202-a104-6bc89066fb2e)
+    ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/6eb1689e-2980-41d6-9b83-76246e387849)
 
 * Here is an example of Boston
   
