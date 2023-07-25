@@ -1,11 +1,12 @@
 * {
     --header-footer-color: #EFEFEF;
     --main-background-color: #DAF0EE;
+    --secondary-background-color: #DAF0EE;
 }
 
 body {
 
-    background-color: var(--main-background-color);
+    background-color: var(--secondary-background-color);
     display: grid;
 
     padding: 0;
@@ -49,9 +50,15 @@ time {
     margin-bottom: 0px;
 }
 
+#temperature {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
 #temperature-low-high,
 #weather-description {
-    margin-top: 0;
+    margin-top: 2px;
+    margin-bottom: 0;
     font-size: 24px;
 }
 
