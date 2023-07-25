@@ -14,3 +14,32 @@ img {
     align-items: center;
     justify-content: center;
 }
+
+#weekly-data {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.day-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.day-div p {
+    text-align: center;
+}
+
+#misc-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#misc-data div {
+    margin: 16px;
+    justify-self: center;
+    align-self: center;
+}
