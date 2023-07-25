@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project was a way to get experience with the Async nature of JavaScript. It allowed me to use promises and async/await to interact with an API and get data from it. The API I used is the WeatherAPI, just the free tier since it can be quite expensive. This project displays the date, time, temperature, name of the city that was searched, and weather data. The weather data consists of both a 24 hour forecast and a 7 day forecast. It also includes misc weather data for the current day; this includes Humidity, Wind Speed & Direction, Sunset & Sunrise, UVI, Dew Point, and Feels Like statistics.
+This project was a way to get experience with the Async nature of JavaScript. It allowed me to use promises and async/await to interact with an API and get data from it. The API I used is the WeatherAPI, just the free tier since it can be quite expensive. This project displays the date, time, temperature, name of the city that was searched, and weather data. The weather data consists of both a 24 hour forecast and a 7 day forecast. It also includes misc weather data for the current day; this includes Humidity, Wind Speed & Direction, Sunset & Sunrise, UVI, Dew Point, and Feels Like statistics. For each weather condition (ex Storm, Rain, Windy, Tornado, Snow, etc.) there is a SVG for it to create a visual of the weather conditions.
 
 The website uses the Session-Storage in the browser. When you load up it will query the weather for Charlotte, NC. However, once the webpage loads the user can search and city the desire in the search bar and it will refresh the page with data for that city.
 
