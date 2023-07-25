@@ -201,6 +201,87 @@ function addHourlyData(data) {
     }
 }
 
+function addWeeklyData(data) {
+
+    let date = new Date(data.daily[0].dt * 1000);
+
+    for(let i = 0; i < 7; i++) {
+        let dayDiv = document.createElement("div");
+        dayDiv.setAttribute("class", "day-div");
+        let day = document.createElement("p");
+        day.setAttribute("class", "day-par");
+        let weatherSVG = document.createElement("img");
+        weatherSVG.setAttribute("class", "weather-svg");
+        let temperature = document.createElement("p");
+
+        if(i == 0) {
+            day.textContent = "Today";
+        } else {
+            date = new Date(data.daily[i].dt * 1000);
+            day.textContent = getDayOfTheWeek(date.getDay());
+        }
+
+        weatherSVG.src = `../images/${convertWeatherTypeToSVG(data.daily[i].weather[0].main)}`;
+        temperature.textContent = `${data.daily[i].temp.min}° F /  ${data.daily[i].temp.max}° F`;
+
+        dayDiv.appendChild(day);
+        dayDiv.appendChild(weatherSVG);
+        dayDiv.appendChild(temperature);
+
+        weeklyData.append(dayDiv);
+    }
+}
+
+function addHumidityData(data) {
+    const humidity = document.createElement("div");
+    humidity.setAttribute("id", "humidity-data");
+    humidity.innerHTML = `Humidity</br>${data.current.humidity}`;
+    miscData.appendChild(humidity);
+}
+
+function addWindData(data){
+    const wind = document.createElement("div");
+    wind.setAttribute("id", "wind-data");
+    wind.innerHTML = `Wind Speed</br>${data.current.wind_speed} MPH`
+                        + `</br></br>`
+                        + `Wind Direction</br>${getWindDirection(data.current.wind_deg)} (${data.current.wind_deg}°)`;
+    miscData.appendChild(wind);
+}
+
+function addSunData(data) {
+    const sun = document.createElement("div");
+    sun.setAttribute("id", "sun-data");
+    const sunrise = document.createElement("p");
+    sunrise.innerHTML = `Sunrise</br>${convertTimestamptoTime(data.current.sunrise)}`;
+    const sunset = document.createElement("p");
+    sunset.innerHTML = `Sunrise</br>${convertTimestamptoTime(data.current.sunset)}`;
+    
+    sun.appendChild(sunrise);
+    sun.appendChild(sunset);
+    
+    miscData.appendChild(sun);
+}
+function addUVIData(data){
+    const uvi = document.createElement("div");
+    uvi.setAttribute("id", "uvi-data");
+    uvi.innerHTML = `UVI</br>${data.current.uvi}`;
+    miscData.appendChild(uvi);
+}
+
+function addFeelsLikeData(data) {
+    const feelsLike = document.createElement("div");
+    feelsLike.setAttribute("id", "feels-like-data");
+    feelsLike.innerHTML = `Feels Like</br>${data.current.feels_like}° F`;
+    miscData.appendChild(feelsLike);
+}
+
+function addDewPointData(data) {
+    const dewPoint = document.createElement("div");
+    dewPoint.setAttribute("id", "dew-point-data");
+    dewPoint.innerHTML = `Dew Point</br>${data.current.dew_point}`;
+    miscData.appendChild(dewPoint);
+}
+
 export {
     addDate,
     addTime,
@@ -210,4 +291,11 @@ export {
     addTemperatureHighAndLow,
     addWeatherDescription,
     addHourlyData,
+    addWeeklyData,
+    addHumidityData,
+    addWindData,
+    addSunData,
+    addUVIData,
+    addFeelsLikeData,
+    addDewPointData,
 }
