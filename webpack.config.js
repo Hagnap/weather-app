@@ -8,7 +8,7 @@ module.exports = {
     weatherAPI: './src/weatherAPI.js',
     //weatherObj: './src/weatherObj.js',
     //manipulateDOM: './src/manipulateDOM.js',
-    //userData: './src/userData.js'
+    dateData: './src/getDateData.js'
   },
   output: {
     filename: '[name].js',

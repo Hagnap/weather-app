@@ -1,4 +1,5 @@
 import * as weatherAPI from "./weatherAPI";
+import * as dateData from "./getDateData"
 
 let city = "Charlotte";
 
@@ -9,3 +10,5 @@ let weatherDataURL = weatherAPI.createWeatherDataURL(geoData);
 let weatherData = await weatherAPI.getWeatherData(weatherDataURL)
 
 console.log(weatherData);
+console.log(dateData.getDate());
+console.log(dateData.getTime());
