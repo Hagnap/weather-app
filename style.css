@@ -1,6 +1,24 @@
+* {
+    --header-footer-color: #EFEFEF;
+    --main-background-color: #DAF0EE;
+}
+
+body {
+
+    background-color: var(--main-background-color);
+    display: grid;
+
+    padding: 0;
+    margin: 0;
+}
+
 img {
     height: 48px;
     width:  48px;
+}
+
+header {
+    background-color: var(--header-footer-color);
 }
 
 #hourly-data {
@@ -42,4 +60,27 @@ img {
     margin: 16px;
     justify-self: center;
     align-self: center;
+}
+
+footer {
+    background-color: var(--header-footer-color);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    border: none;
+    background-color: none;
+}
+footer button img {
+
+    fill:none;
+    padding: 0;
+    margin: 0;
+}
+
+footer button img:hover {
+    opacity: 0.7;
 }
