@@ -51,8 +51,12 @@ header {
 }
 
 #misc-data {
+    justify-self: center;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -64,10 +68,13 @@ header {
 
 footer {
     background-color: var(--header-footer-color);
+    position: sticky;
+    top: 100;
+    bottom: 0;
     
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 footer button {
