@@ -35,7 +35,8 @@ Sadly for this project the webpage runs into errors when hosted on GitHub pages 
   ![BST-1](https://github.com/jhagg26/weather-app/assets/60297426/fcb492ef-af81-475a-b9ae-3813beebc6f5)
 
 
-  ![BST-2](https://github.com/jhagg26/weather-app/assets/60297426/c68f3d6f-2e8c-4b68-866b-a6b6e75a536f) 
+   
+  ![BST-2](https://github.com/jhagg26/weather-app/assets/60297426/3dd0af70-a911-43f5-9e55-469335dd6e60)
 
 ## Challenges Faced
 
