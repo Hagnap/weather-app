@@ -21,17 +21,25 @@ header {
     background-color: var(--header-footer-color);
 }
 
+#hourly-data,
+#weekly-data,
+#misc-data {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
 #hourly-data {
+    margin: 8px 0px;
+    justify-self: center;
+    width: 90vw;
     background-color: black;
-    border: 1px solid black;
-    border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .hour-div {
     background-color: var(--main-background-color);
-    padding: 2px;
+    padding: 4px;
     border-left: 1px solid black;
     border-right: 1px solid black;
     display: flex;
@@ -41,6 +49,11 @@ header {
 }
 
 #weekly-data {
+    justify-self: center;
+    width: 90vw;
+    margin: 8px;
+    margin-bottom: 16px;
+    
     display: flex;
     justify-content: space-evenly;
     align-self: center;
@@ -64,13 +77,43 @@ header {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
 }
 
 #misc-data div {
-    margin: 16px;
     justify-self: center;
     align-self: center;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#misc-data div p {
+    text-align: center;
+}
+
+#misc-data div:first-child {
+    border-bottom: 2px solid black;
+}
+
+#misc-data div:nth-child(2) {
+    border-left:  2px solid black;
+    border-right:  2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#misc-data div:nth-child(3) {
+    border-bottom: 2px solid black;
+}
+
+#misc-data div:nth-child(5) {
+    border-right:  2px solid black;
+    border-left:   2px solid black;
 }
 
 footer {
@@ -78,10 +121,15 @@ footer {
     position: sticky;
     top: 100;
     bottom: 0;
+
+    padding: 0;
+    margin: 0px;
+
+    height: 35px;
     
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 footer button {
@@ -93,6 +141,9 @@ footer button img {
     fill:none;
     padding: 0;
     margin: 0;
+
+    height: 32px;
+    width:  32px;
 }
 
 footer button img:hover {
