@@ -25,12 +25,13 @@ Sadly for this project the webpage runs into errors when hosted on GitHub pages 
 
 There are errors because with the free tier of the WeatherAPI you can NOT make HTTPS request to the WeatherAPI on a live website, it forces free tier users to use HTTP. It works locally but when hosted on GitHub Pages it runs to errors due to this issue. Now I considered paying the subscription but the cheapest option that allowed HTTPS request was $470 a month... I cannot afford that and if I could I wouldn't want to spend that money for a silly little project. 
 
-* Here is an example of Charlotte
-
-  ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/74811557-2817-4644-9dcf-8dab9a14bbb0)
-  
+* Here is an example of Charlotte  
 
   ![CLT-1](https://github.com/jhagg26/weather-app/assets/60297426/9341ed81-c123-435a-8669-c932690685a7)
+
+	
+  ![CLT-2](https://github.com/jhagg26/weather-app/assets/60297426/74811557-2817-4644-9dcf-8dab9a14bbb0)
+
 
 * Here is an example of Boston
   
