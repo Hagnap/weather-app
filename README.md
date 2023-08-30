@@ -44,7 +44,7 @@ There are errors because with the free tier of the WeatherAPI you can NOT make H
 ## Challenges Faced
 
 * Storing API Keys 
-    * This had a simple solution, store the API key in an environmental variable, and ignore the file that stores it. I found the solution [online](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/protecting-api-keys).
+    * This had a simple solution, store the API key in an environmental variable, and ignore the file that stores it. I found the solution [here](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/protecting-api-keys).
 
 * Interacting with APIs with JS Asnyc Code
     * These are things that I had no experience with going into this project outside or reading three articles/blogs and watching some YouTube vidoes on this. I will say it was easy to do with Promises and the async, await keywords. After going over some examples I saw when learning about these things I was confident in being able to implement it myself.
